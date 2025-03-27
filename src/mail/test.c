@@ -2,7 +2,7 @@
 #include <string.h>
 
 void buffer_overflow() {
-    int test = 0;
+    int test = 1;
     char buffer[10];
     strcpy(buffer, "This string is too long for the buffer"); // ❌ Buffer overflow
 }
